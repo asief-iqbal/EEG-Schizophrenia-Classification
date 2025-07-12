@@ -6,24 +6,24 @@ This repository contains the code and resources for the research paper titled, *
 
 ## 📜 Abstract
 
-[cite_start]Psychiatric disorders demand enhanced diagnostics[cite: 8]. [cite_start]This research conducts a comparative analysis of machine learning and deep learning models for the detection of a specific mental disorder through EEG analysis[cite: 8]. [cite_start]Leveraging a dataset of EEG signals from schizophrenic patients, we employ eight distinct models, including Random Forest, K-Nearest Neighbors (KNN), XGBoost, Logistic Regression, Support Vector Machine (SVM), Decision Tree, and a Convolutional Neural Network (CNN)[cite: 9]. [cite_start]Our feature extraction process involves signal processing techniques, and the models are rigorously evaluated on their accuracy, precision, and recall[cite: 10]. [cite_start]The study aims to provide comparative insights into the efficiency of different modeling approaches in the challenging task of mental disorder detection using EEG data[cite: 11].
+Psychiatric disorders demand enhanced diagnostics. This research conducts a comparative analysis of machine learning and deep learning models for the detection of a specific mental disorder through EEG analysis. Leveraging a dataset of EEG signals from schizophrenic patients, we employ eight distinct models, including Random Forest, K-Nearest Neighbors (KNN), XGBoost, Logistic Regression, Support Vector Machine (SVM), Decision Tree, and a Convolutional Neural Network (CNN). Our feature extraction process involves signal processing techniques, and the models are rigorously evaluated on their accuracy, precision, and recall. The study aims to provide comparative insights into the efficiency of different modeling approaches in the challenging task of mental disorder detection using EEG data.
 
 ---
 
 ## 🛠️ Methodology
 
-[cite_start]The methodology for this project involves a comprehensive analysis of Electroencephalogram (EEG) data to distinguish between healthy individuals and those diagnosed with schizophrenia[cite: 70]. The key steps are outlined below and visualized in the following flowchart:
+The methodology for this project involves a comprehensive analysis of Electroencephalogram (EEG) data to distinguish between healthy individuals and those diagnosed with schizophrenia. The key steps are outlined below and visualized in the following flowchart:
 
 ![Methodology Flowchart](Methodology.jpg)
 
 ### Data Preprocessing
-* [cite_start]**Data Collection**: The dataset was compiled from a peer-reviewed journal, incorporating a patient group of 14 individuals with paranoid schizophrenia and a control group of 14 healthy individuals[cite: 63].
-* [cite_start]**Data Filtering**: EEG data was filtered to isolate five distinct frequency bands using a second-order Butterworth filter[cite: 67].
-* [cite_start]**Epoching**: EEG signals were segmented into fixed-length epochs of 5 seconds with a 1-second overlap[cite: 72].
-* [cite_start]**Labeling**: The dataset was categorized into healthy and patient groups for supervised learning[cite: 73].
+* **Data Collection**: The dataset was compiled from a peer-reviewed journal, incorporating a patient group of 14 individuals with paranoid schizophrenia and a control group of 14 healthy individuals.
+* **Data Filtering**: EEG data was filtered to isolate five distinct frequency bands using a second-order Butterworth filter.
+* **Epoching**: EEG signals were segmented into fixed-length epochs of 5 seconds with a 1-second overlap.
+* **Labeling**: The dataset was categorized into healthy and patient groups for supervised learning.
 
 ### Feature Extraction
-[cite_start]A set of 7201 features was derived from various mathematical functions applied to the EEG epochs[cite: 74]. These features include:
+A set of 7201 features was derived from various mathematical functions applied to the EEG epochs. These features include:
 * Mean
 * Standard Deviation
 * Peak-to-Peak
@@ -39,23 +39,23 @@ This repository contains the code and resources for the research paper titled, *
 * Kurtosis
 
 ### Model Training and Evaluation
-* [cite_start]**Train-Test Split**: An 80:20 train-test split was implemented for robust model evaluation[cite: 75].
+* **Train-Test Split**: An 80:20 train-test split was implemented for robust model evaluation.
 * **Machine Learning Models**:
-    * [cite_start]Logistic Regression [cite: 81]
-    * [cite_start]K-Nearest Neighbors (KNN) [cite: 81]
-    * [cite_start]Support Vector Machine (SVM) with Linear and RBF kernels [cite: 81, 83]
-    * [cite_start]Random Forest [cite: 81]
-    * [cite_start]XGBoost [cite: 81]
-    * [cite_start]Decision Tree [cite: 81]
+    * Logistic Regression 
+    * K-Nearest Neighbors (KNN) 
+    * Support Vector Machine (SVM) with Linear and RBF kernels 
+    * Random Forest 
+    * XGBoost 
+    * Decision Tree 
 * **Deep Learning Model**:
-    * [cite_start]A three-layered 1D Convolutional Neural Network (CNN) was implemented[cite: 85].
-* [cite_start]**Evaluation Metrics**: Models were evaluated based on accuracy, precision, and recall[cite: 93].
+    * A three-layered 1D Convolutional Neural Network (CNN) was implemented.
+* **Evaluation Metrics**: Models were evaluated based on accuracy, precision, and recall.
 
 ---
 
 ## 📊 Results
 
-[cite_start]The performance of the models was assessed based on their ability to predict and classify schizophrenia from the test dataset[cite: 93]. The results are summarized below:
+The performance of the models was assessed based on their ability to predict and classify schizophrenia from the test dataset. The results are summarized below:
 
 ### Accuracy Comparison
 
